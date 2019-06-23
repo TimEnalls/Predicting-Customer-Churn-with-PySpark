@@ -34,9 +34,11 @@ I included a python file containing the project. Unfortunately, I could not incl
 
 Using the data, I answered the following questions:
 
-1.	The random forest classifier model had the highest F1 score at 84.7% when it comes to predicting customer churn in the provided data set.
+1.	The Gradient-Boost Tree model typically has the highest F1 score in this project. However, each time I train the models in this notebook, the results vary. 
 
-2.	The attributes that were most predictive of customer churn in the random forest classifier model were days_active, days_paid, days_free, and Thumbs Down.
+2.	After optimizing the Gradient-Boost Tree model, I ultimately chose the 10 value for max iterations and the 5 value for max depth because of the results from a cross validation. I found that the F1 score increased by 2.2% to 81.8% and the accuracy increased by 2.4% to 79.1% as a result of optimizing the model.
+3.	I displayed the features that were most predictive in the Gradient-Boost Tree model and found that these four features had noticeably higher importance values than the other features: days_active, NextSong, Thumbs Up, and days_free. The first three features makes sense because churned users would naturally have lower values for those features than users who decide to use the music service considerably longer.
+
 
 **Acknowledgements**
 
